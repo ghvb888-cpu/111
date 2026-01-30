@@ -1,9 +1,5 @@
 {
-  "name": "智涂安 - 涂料行业AI安全助手",
-  "description": "专为涂料行业设计的全方位安全管理与能力提升平台，集成AI法规查询、三维风险地图、智能培训及预测性维护等核心功能。",
-  "requestFramePermissions": [
-    "camera",
-    "microphone",
-    "geolocation"
-  ]
+  "name": "test",
+  "description": "A clean, modern, and responsive React starter template built with TypeScript and Tailwind CSS, following world-class frontend engineering standards.",
+  "requestFramePermissions": []
 }

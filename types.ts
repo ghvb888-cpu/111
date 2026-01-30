@@ -1,22 +1,11 @@
 
-export enum AppTab {
-  HOME = 'home',
-  CAPABILITY = 'capability',
-  MANAGEMENT = 'management',
-  ANALYSIS = 'analysis',
-  PROFILE = 'profile'
-}
-
 export interface NavItem {
-  id: AppTab;
   label: string;
-  icon: string;
+  href: string;
 }
 
-export interface ModuleItem {
+export interface FeatureCardProps {
   title: string;
   description: string;
   icon: string;
-  color: string;
-  path?: string;
 }

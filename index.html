@@ -1,79 +1,29 @@
 
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智涂安 - AI安全助手</title>
+    <title>Minimalist Starter</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
-            font-family: 'Noto Sans SC', 'Inter', sans-serif;
-            -webkit-tap-highlight-color: transparent;
+            font-family: 'Inter', sans-serif;
         }
-        .no-scrollbar::-webkit-scrollbar {
-            display: none;
-        }
-        .no-scrollbar {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        /* Custom Animations */
-        @keyframes scan-hud {
-            0% { top: 10%; opacity: 0; }
-            50% { opacity: 1; }
-            100% { top: 90%; opacity: 0; }
-        }
-        .animate-scan-hud {
-            animation: scan-hud 3s infinite linear;
-        }
-        @keyframes scan-pulse {
-            0% { opacity: 0.2; transform: scale(0.95); }
-            50% { opacity: 0.5; transform: scale(1.02); }
-            100% { opacity: 0.2; transform: scale(0.95); }
-        }
-        .animate-scan-pulse {
-            animation: scan-pulse 3s infinite ease-in-out;
-        }
-        @keyframes corner-pulse {
-            0% { border-color: rgba(244, 63, 94, 0.3); transform: scale(1); }
-            50% { border-color: rgba(244, 63, 94, 1); transform: scale(1.05); }
-            100% { border-color: rgba(244, 63, 94, 0.3); transform: scale(1); }
-        }
-        .animate-corner {
-            animation: corner-pulse 2s infinite ease-in-out;
-        }
-        @keyframes radar-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-        .animate-radar {
-            animation: radar-spin 4s infinite linear;
-        }
-        /* Markdown overrides */
-        .prose h1, .prose h2, .prose h3 { font-weight: 800; color: #1e293b; margin-top: 1.5rem; margin-bottom: 0.5rem; }
-        .prose p { margin-bottom: 0.75rem; line-height: 1.6; color: #475569; }
-        .prose ul { list-style-type: disc; padding-left: 1.25rem; margin-bottom: 1rem; }
-        .prose li { margin-bottom: 0.25rem; color: #475569; }
     </style>
 <script type="importmap">
 {
   "imports": {
     "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "recharts": "https://esm.sh/recharts@^3.7.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
-    "marked": "https://esm.sh/marked@^15.0.0"
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 antialiased">
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
 </body>
 </html>
